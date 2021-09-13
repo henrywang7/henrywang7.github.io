@@ -17,6 +17,11 @@ function checkEmail(){
     const emailAddr = emailInput.value.trim();
     const emailRegex = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     const isValidEmail = emailRegex.test(String(emailAddr).toLowerCase());
+    if (!isValidEmail) {
+        emailInput.classList.add('invalid-alert');
+    } else {
+        emailInput.classList.remove('invalid-alert');
+    }
     return isValidEmail;
 }
 
