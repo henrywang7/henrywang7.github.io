@@ -1,10 +1,32 @@
 <!DOCTYPE html>
 <head>
-<link href="/normalize.css" rel="stylesheet">
-<link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="index.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+  <header>
+    <img src="https://i.imgur.com/Ko1yg2r.png">
+  </header>
 </head>
 <body>
-  <header>
-    <img src="https://bit.ly/3C4vhs1">
-  </header>
+  <div class = "main-wrapper">
+    <div class = "subscribe-wrapper">
+      <div class = "div-left">
+          <img src = "https://i.imgur.com/uGrPUoI.png" alt = "subscribe form image">
+      </div>
+      <div class="div-right">
+        <h2 class="title">Subscribe to our newsletter</h2>
+        <h4 class="undertitle">Get regular news and updates from Dropbox.</h3>
+        <form action="#" class="subs-form">
+          <div class="signup-form">
+            <input type = "text" class = "form-control" id = "name" placeholder = "Name">
+            <input type = "text" class = "form-control" id = "email" placeholder = "Email">
+            <input type = "submit" id = "submit-btn" value = "Subscribe" disabled>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
 </body>
